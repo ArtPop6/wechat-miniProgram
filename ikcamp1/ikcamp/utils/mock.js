@@ -5,29 +5,29 @@ const list = {
         {
           contentId: 1177432,
           cover: "https://n1image.hjfile.cn/mh/2017/06/26/9ffa8c56cfd76cf5159011f4017f022e.jpg",
-          pubdate: "2017-06-27 00:45:00",
+          pubdate: "2019-04-29 00:45:00",
           title: "Quora精选：为什么聪明人总能保持冷静？"
         },
         {
           contentId: 1176561,
           cover: "https://n1image.hjfile.cn/mh/2017/06/26/0eb29c4c08e7be93f74ce9ce0fd5a25e.jpg",
-          pubdate: "2017-06-27 00:30:00",
+          pubdate: "2019-04-29 00:30:00",
           title: "与时间有关的英语俚语（四）"
         },
         {
           contentId: 1161967,
           cover: "http://n1image.hjfile.cn/mh/2017/05/25/5d6ce79848cc81b800959383c35dd081.jpg",
-          pubdate: "2017-06-27 00:15:00",
+          pubdate: "2019-04-29 00:15:00",
           title: "2017.5大学英语六级口语考试真题：看图论述“人与人之间的信任”"
         },
         {
           contentId: 1177828,
           cover: "https://n1image.hjfile.cn/mh/2017/06/26/c99a6d180367bf1a250d6e7c6c3083c6.jpg",
-          pubdate: "2017-06-27 00:00:01",
+          pubdate: "2019-04-29 00:00:01",
           title: "亚马逊卖衣服有新招！新衣服试穿一周再付钱"
         }
       ],
-      date: "2017-06-27"
+      date: "2019-04-29"
     },
     {
       articles: [
@@ -130,7 +130,7 @@ const detail = {
   status: 0,
   time: null
 };
-
+// mock为true调用假数据
 export {
   detail,
   list

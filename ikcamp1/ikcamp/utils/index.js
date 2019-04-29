@@ -10,7 +10,7 @@ const DEFAULT_REQUEST_OPTIONS = {
   method: "GET",
   dataType: "json"
 }
-
+// 封装方法
 let util = {
   isDev: config.isDev,
   log() {
@@ -52,7 +52,7 @@ let util = {
       }
     })
   },
-  // 封装request,直接写request方法，不用每个页面都写
+  // 封装request,直接写request方法，不用每个页面都写 最有意义，封装了Promise，解决异步问题
   request(opt) {
     // mock本地数据
     let { url, data, header, method, dataType, mock = false} = opt
