@@ -20,4 +20,13 @@ exports.main = async (event, context) => {
 
     }
   })
+  .then(res => {
+    return db.collection('userGroup').add({
+      data: {
+        groupId: res._id,
+        userId: userInfo.openId,
+        invalid: false
+      }
+    })
+  })
 }
