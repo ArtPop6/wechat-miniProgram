@@ -1,0 +1,81 @@
+.section {
+  width: 100%;
+}
+.searchBar{
+  display: flex;
+  justify-content: center;
+  height: 100rpx;
+  background: #ff6700;
+}
+.searchBar .searchBar-box{
+  display: inline-block;
+  width: 95%;
+  height: 60rpx;
+  margin-top: 26rpx;
+  border-radius: 40rpx;
+  background: #fff;
+}
+.searchBar-box.tap{
+  background: rgba(255,247,231,.9);
+}
+.search-plac {
+  text-align: center;
+  font-size: 11pt;
+  margin-top: 4rpx;
+}
+.searchBar-box .search-icon {
+  position: absolute;
+  left: 36%;
+  top: 35rpx;
+  width: 44rpx;
+  height: 44rpx;
+}
+
+.section-swiper .slide{
+  width: 100%;
+  height: 380rpx;
+}
+.section-swiper .slide-image{
+  width: 100%;
+  display: block;
+}
+
+.navBar{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 160rpx;
+  background: #fff;
+}
+.nav-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-item{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  margin: 0 36rpx;
+}
+.nav-item .item-img {
+  display: inline-block;
+  width: 80rpx;
+  height: 80rpx;
+}
+.nav-item .item-text{
+  font-size: 26rpx;
+  color: #999;
+}
+.activity {
+  display: flex;
+  flex-direction: column;
+  margin-top: 6rpx;
+}

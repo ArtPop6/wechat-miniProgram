@@ -1,0 +1,45 @@
+<view class="container">
+  <view class="section searchBar">
+    <view class="section searchBar-box {{isTap?'tap':''}}">
+      <image src="../../assets/icons/search.png" mode="aspectFill" class="search-icon" />
+      <input type="text" name="searchBar" disabled="true" placeholder="搜索商品" placeholder-class="search-plac" bindtap="toSearch" />
+    </view>
+  </view>
+  <view class="scetion section-swiper">
+    <swiper class="slide" indicator-dots="{{indicator_dots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{index_slides}}" wx:key="{{index}}">
+        <swiper-item>
+          <image src="{{item.slide_url}}" mode="widthFix" class="slide-image" data-id="{{item.id}}" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="section navBar">
+    <view class="section nav-list" wx:for="{{nav_data}}" wx:key="index">
+      <navigator url="{{item.nav_urls}}" hover-class="none">
+        <view class="nav-item">
+          <image src="{{item.nav_img}}" class="item-img" />
+          <text class="item-text">{{item.nav_title}}</text>
+        </view>
+      </navigator>
+    </view>
+  </view>
+  <view class="section activity">
+    <view class="activity up">
+      <view class="left-list">
+        <image src="{{index_activity[0].img_url}}" data-id="{{index_activity[0].id}}" />
+      </view>
+      <view class="right-list">
+        <image src="{{index_activity[1].img_url}}" data-id="{{index_activity[1].id}}" mode="aspectFill" />
+        <image src="{{index_activity[2].img_url}}" data-id="{{index_activity[2].id}}" mode="aspectFill" />
+      </view>
+    </view>
+    <view class="activity down"></view>
+  </view>
+  <view class="section block">
+
+  </view>
+  <view class="section bottom-line">
+    <text>到底啦</text>
+  </view>
+</view>
